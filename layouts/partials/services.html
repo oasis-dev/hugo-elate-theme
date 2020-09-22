@@ -15,7 +15,12 @@
 				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
 					<i class="icon to-animate-2 {{ .icon | markdownify }}"></i>
 					<h3>{{ .title | markdownify }}</h3>
-					<p>{{ .description | markdownify }}</p>
+					<ul>
+						<li>{{ .benefit1 | markdownify }}</li>
+						<li>{{ .benefit2 | markdownify }}</li>
+						<li>{{ .benefit3 | markdownify }}</li>
+						<li>{{ .benefit4 | markdownify }}</li>
+				    </ul>
 				</div>
 				<div class="clearfix visible-sm-block"></div>
 			{{ end }}

@@ -1,23 +1,24 @@
-	<section id="fh5co-work" data-section="work">
+	<section id="fh5co-work" data-section="projects">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">{{ with .Site.Params.work.title }}{{ . }}{{ end }}</h2>
+					<h2 class="to-animate">{{ with .Site.Params.projects.title }}{{ . }}{{ end }}</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
+							<h3>{{ with .Site.Params.projects.description }}{{ . | markdownify }}{{ end }}</h3>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-sm">
-			{{ range .Site.Params.work.row }}
+			{{ range .Site.Params.projects.row }}
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/{{ .img }}" class="fh5co-project-item image-popup to-animate">
-						<img src="images/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
+					<a href="{{ .url }}" class="fh5co-project-item image-popup to-animate">
+						<img src="img/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>{{ .title }}</h2>
 						<span>{{ .subtitle }}</span>
+						<p style="color:#818892; font-size: 16px; line-height: 1.5;">{{ .description }}</p>
 						</div>
 					</a>
 				</div>				
@@ -27,7 +28,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center to-animate">
-					<p>{{ .Site.Params.work.footertext | markdownify }}</p>
+					<p>{{ .Site.Params.projects.footertext | markdownify }}</p>
 				</div>
 			</div>
 		</div>

@@ -22,6 +22,7 @@
 				<span>{{.Site.Params.intro.video.title | markdownify }}</span>
 
 				<a href="{{ .Site.Params.intro.video.url }}" class="popup-vimeo btn-video"><i class="{{ .Site.Params.intro.video.icon | markdownify }}"></i></a>
+				<p class="footnote">{{ .Site.Params.intro.video.footertext | markdownify }}</p>
 			</div>
 			{{ end }}
 		</div>

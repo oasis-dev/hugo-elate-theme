@@ -1,9 +1,17 @@
-	<footer id="footer" role="contentinfo">
+	<footer id="footer" role="contentinfo" style="margin-top: 75px;">
 		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
 		<div class="container">
 			<div class="">
 				<div class="col-md-12 text-center">
 					<p>{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</p>
+					<p>{{ .Site.Title }} is an <a href="https://oasis-open-projects.org/">OASIS Open Project</a>. All Rights Reserved. 
+						<br />OASIS <a href="https://www.oasis-open.org/policies-guidelines/trademark">trademark</a>, <a href="https://www.oasis-open.org/policies-guidelines/ipr">IPR</a>, <a href="https://www.oasis-open.org/policies-guidelines/privacy">Privacy</a>, and other <a href="https://www.oasis-open.org/policies-guidelines">policies</a> apply. 
+						<br /><a href="mailto:communications@oasis-open.org">Contact OASIS</a> for details.</p>
+						{{ if .Param "mailing_list_subscribe"}}
+						<div>
+							<p>Subscribe to our <a href="{{ .Param "mailing_list_subscribe" }}"> mailing list</a>.</p>
+						</div>
+						{{ end }}
 				</div>
 			</div>
 			<div class="row">

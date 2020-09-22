@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   opacity: 1;
   top: 0;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header .navbar {
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: 35px;
 }
 #fh5co-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
