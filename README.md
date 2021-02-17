@@ -1,3 +1,6 @@
+DELEETE MEEE!!!!!!!!
+
+
 # Elate Theme
 Elate is a one page portfolio for freelancers, designers, developers and even agencies based on the [original html5 theme](//freehtml5.co/elate-free-html5-bootstrap-template/). 
 This Hugo theme features several content sections, a contact form, a responsive portfolio grid with hover effects, a smooth parallax and animation effect on sections. Its packed with 4 ready to use styles.
